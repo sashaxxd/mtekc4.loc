@@ -16,6 +16,7 @@ class MenuWidget extends Widget{
     public $data;
     public $tree;
     public $menuHtml;
+    public $model;
 
     public function init(){
         parent::init();
@@ -43,15 +44,15 @@ class MenuWidget extends Widget{
         return $tree;
     }
 
-    protected function getMenuHtml($tree){
+    protected function getMenuHtml($tree, $tab = "             "){
         $str = '';
         foreach ($tree as $category) {
-            $str .= $this->catToTemplate($category);
+            $str .= $this->catToTemplate($category, $tab);
         }
         return $str;
     }
 
-    protected function catToTemplate($category){
+    protected function catToTemplate($category, $tab){
         ob_start();
         include __DIR__ . '/menu_tpl/' . $this->tpl;
         return ob_get_clean();

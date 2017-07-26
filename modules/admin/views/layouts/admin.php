@@ -76,8 +76,8 @@ AdminAsset::register($this);
                         <input type="checkbox" id="ResponsiveMenu2-submenu">
                         <ul class="ResponsiveMenu2" id="ResponsiveMenu2">
                             <li><a href="<?= \yii\helpers\Url::to('/admin')?>">ЗАКАЗЫ</a></li>
-                            <li><a href="<?= \yii\helpers\Url::to('category/index')?>">КАТЕГОРИИ ТОВАРОВ</a></li>
-                            <li><a href="<?= \yii\helpers\Url::to('category/create')?>">СОЗДАТЬ КАТЕГОРИЮ</a></li>
+                            <li><a href="<?= \yii\helpers\Url::to('/admin/category/index')?>">КАТЕГОРИИ ТОВАРОВ</a></li>
+                            <li><a href="<?= \yii\helpers\Url::to('/admin/category/create')?>">СОЗДАТЬ КАТЕГОРИЮ</a></li>
                         </ul>
                     </div>
                 </div>

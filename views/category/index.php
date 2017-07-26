@@ -26,10 +26,10 @@ use yii\helpers\Html;
             <!-- Меню категорий -->
             <div class="col-1">
                 <div id="mtex_PanelMenu1">
-                    <a href="#PanelMenu1_markup" id="PanelMenu1">КАТАЛОГ</a>
+                    <a href="#PanelMenu1_markup" id="PanelMenu1" style="text-align: center;">КАТАЛОГ</a>
                     <div id="PanelMenu1_markup">
                         <!-- Вызов виджета меню -->
-                        <ul class="catalog">
+                        <ul class="catalog" style="padding-left: 20px;">
                             <?= \app\components\MenuWidget::widget(['tpl' => 'menu'])?>
                         </ul>
 
