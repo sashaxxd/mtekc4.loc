@@ -29,7 +29,7 @@ use yii\helpers\Html;
                     <a href="#PanelMenu1_markup" id="PanelMenu1" style="text-align: center;">КАТАЛОГ</a>
                     <div id="PanelMenu1_markup">
                         <!-- Вызов виджета меню -->
-                        <ul class="catalog" style="padding-left: 20px;">
+                        <ul class="catalog" >
                             <?= \app\components\MenuWidget::widget(['tpl' => 'menu'])?>
                         </ul>
 
