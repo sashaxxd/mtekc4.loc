@@ -78,6 +78,8 @@ AdminAsset::register($this);
                             <li><a href="<?= \yii\helpers\Url::to('/admin')?>">ЗАКАЗЫ</a></li>
                             <li><a href="<?= \yii\helpers\Url::to('/admin/category/index')?>">КАТЕГОРИИ ТОВАРОВ</a></li>
                             <li><a href="<?= \yii\helpers\Url::to('/admin/category/create')?>">СОЗДАТЬ КАТЕГОРИЮ</a></li>
+                            <li><a href="<?= \yii\helpers\Url::to('/admin/product/index')?>">ТОВАРЫ</a></li>
+                            <li><a href="<?= \yii\helpers\Url::to('/admin/product/create')?>">ДОБАВИТЬ ТОВАР</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,6 +90,21 @@ AdminAsset::register($this);
 
     <!-- Контент -->
     <div class="container" style="padding: 50px 20px 50px 20px;">
+        <?php if (Yii::$app->session->hasFlash('success')): ?>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <?php echo Yii::$app->session->getFlash('success'); ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (Yii::$app->session->hasFlash('error')): ?>
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <?php echo Yii::$app->session->getFlash('error'); ?>
+            </div>
+        <?php endif; ?>
     <?= $content ?>
     <!-- /Контент -->
     </div>

@@ -150,25 +150,22 @@ AppAsset::register($this);
             </div>
             <div class="col-2">
                 <div id="mtex_Text14">
-                    <span id="mtex_uid23">Категории товаров</span>
+                    <span id="mtex_uid23">Навигация</span>
                 </div>
                 <div id="mtex_BulletedList1">
                     <div>
                         <div class="bullet" id="mtex_uid24">&#9632;</div>
-                        <div class="item item0"><span id="mtex_uid25">Хлопок</span></div>
+                        <div class="item item0"><span id="mtex_uid25">Главная</span></div>
                     </div>
-                    <div id="mtex_uid26">
-                        <div class="bullet" id="mtex_uid27">&#9632;</div>
-                        <div class="item item1"><span id="mtex_uid28">Шерсть</span></div>
+                    <div>
+                        <div class="bullet" id="mtex_uid24">&#9632;</div>
+                        <div class="item item0"><span id="mtex_uid25">О магазине</span></div>
                     </div>
-                    <div id="mtex_uid29">
-                        <div class="bullet" id="mtex_uid30">&#9632;</div>
-                        <div class="item item2"><span id="mtex_uid31">Лень</span></div>
+                    <div>
+                        <div class="bullet" id="mtex_uid24">&#9632;</div>
+                        <div class="item item0"><span id="mtex_uid25">Контакт</span></div>
                     </div>
-                    <div id="mtex_uid32">
-                        <div class="bullet" id="mtex_uid33">&#9632;</div>
-                        <div class="item item3"><span id="mtex_uid34">Другие ткани</span></div>
-                    </div>
+
                 </div>
             </div>
             <div class="col-3">
